@@ -1,0 +1,16 @@
+
+        #box{
+            width: 300px;
+            height: 150px;
+            margin: 0px auto;
+            border: 10px solid rgb(12, 206, 12);
+                }
+                h1{
+                    text-align: center;
+                    text-decoration: rgb(145, 255, 0);
+                }
+                table{
+                margin: 0px auto;
+                background-color: blueviolet;
+                }
+                

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Currency Converter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="style.js"></script>
+
+</head>
+<body onload="convertCurrency();">
+    <div id="box">
+        <h1>Currency Converter</h1>
+<table>
+    <tr>
+        <td>
+            <!--we call the currencyConver function onkeyup event of the text box...down here-->
+            <input id="fromAmount" type="text" size="10" value="1"onkeyup="convertCurrency();"/></td>
+        <td>
+            <select id="from"onChange="convertCurrency();">
+                <option value="EUR">Euro</option>
+                <option value="DDK">Danish Krone</option>
+                <option value="JPY">Japanese Yen</option>
+                <option value="ZAR">South African Rand</option>
+                <option value="USD">United States Dollar</option>
+                <option value="UGX">Uganda Shilling</option>
+                <option value="KES"selected>Kenya Shilling</option>
+                <option value="CAD">Canadian Dollar</option>
+                <option value="GBP">Pound Sterling</option>
+                <option value="INR">Indian Rupee</option>
+                <option value="ILS">Isreali New Shekel</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+            <td>
+                    <input id="toAmount" type="text" size="10" disabled></td>
+                <td>
+                    <select id="to"onChange="convertCurrency();">
+                        <option value="EUR">Euro</option>
+                        <option value="DDK">Danish Krone</option>
+                        <option value="JPY">Japanese Yen</option>
+                        <option value="ZAR">South African Rand</option>
+                        <option value="USD"selected>United States Dollar</option>
+                        <option value="UGX">Uganda Shilling</option>
+                        <option value="KES">Kenya Shilling</option>
+                        <option value="CAD">Canadian Dollar</option>
+                        <option value="GBP">Pound Sterling</option>
+                        <option value="INR">Indian Rupee</option>
+                        <option value="ILS">Isreali New Shekel</option>
+                    </select>
+                </td>
+    </tr>
+</table>
+
+    </div>
+</body>
+</html>
